@@ -14,11 +14,7 @@ function atLeastFive(array, operation) {
   for (let score of array){
     operation(score)?countScoremore70+=1:countScoremore70;
   }
-  if (countScoremore70 >=5){
-    return true
-  }else{
-    return false
-  }
+  return countScoremore70 >=5;
 }
 
 // Using `atLeastFive` function here
